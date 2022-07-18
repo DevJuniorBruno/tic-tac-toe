@@ -1,5 +1,5 @@
-const player1 = prompt("NOME DO PLAYER X:");
-const player2 = prompt("NOME DO PLAYER O:");
+const player1 = "X"
+const player2 = "O"
 var playTime = player1;
 var fimDeJogo = false;
 var player = document.querySelectorAll("div#contador img") [0];
@@ -88,9 +88,9 @@ function initialize(){
         if(vencedor != ""){
             fimDeJogo= true;
                 if(vencedor == player1)
-                    setTimeout(()=> { alert(`${player1} VENCEU O JOGO!!`)}, 500);
+                    setTimeout(()=> { alert(`${vencedor} VENCEU O JOGO!!`)}, 500);
                 if(vencedor == player2)
-                    setTimeout (()=> {alert(`${player2} VENCEU O JOGO`)}, 500);
+                    setTimeout (()=> {alert(`${vencedor} VENCEU O JOGO`)}, 500);
             }
 
  }
