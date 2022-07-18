@@ -12,11 +12,11 @@ function mostrador() {
     if(fimDeJogo) {return;}
     if(playTime == player1) {
         var player = document.querySelectorAll("div#contador img") [0];
-        player.setAttribute("src", "/img/x.png");
-        console.log(player);
+        player.setAttribute("src", "img/x.png");
+
     }else {
         var player = document.querySelectorAll("div#contador img") [0];
-        player.setAttribute("src", "img/circulo.png")
+        player.setAttribute("src", "/img/circulo.png")
     }
 }
 
@@ -38,7 +38,9 @@ function initialize(){
                 playTime = player2
             }
             else{
-                this.innerHTML = '<'
+                this.innerHTML = "<img src = 'img/circulo.png'>";
+                this.setAttribute('jogada', player2);
+                playTime= player1;
             }   
             mostrador()
             initialize()
