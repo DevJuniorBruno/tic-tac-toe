@@ -16,7 +16,7 @@ function mostrador() {
 
     }else {
         var player = document.querySelectorAll("div#contador img") [0];
-        player.setAttribute("src", "/img/circulo.png")
+        player.setAttribute("src", "img/circulo.png")
     }
 }
 
