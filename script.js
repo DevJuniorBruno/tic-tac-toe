@@ -2,7 +2,6 @@ const player1 = "X";
 const player2 = "O";
 var playTime = player1;
 var fimDeJogo = false;
-var git;
 
 mostrador();
 initialize();
